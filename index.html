@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Photo Resizer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Passport Photo Resizer</h1>
+        <div id="input-section">
+            <div class="step-indicator">Step 1: Upload Photo</div>
+            <div id="drop-area">
+                <p>Drag and drop an image here or click to choose a file</p>
+                <input type="file" id="upload-photo" accept="image/*" />
+            </div>
+        </div>
+        <div id="crop-section">
+            <div class="step-indicator">Step 2: Crop Photo</div>
+            <div id="cropper-container">
+                <img id="crop-image" src="" alt="Image to crop">
+            </div>
+            <button id="crop-button">Crop Image</button>
+        </div>
+        <div id="preview-container">
+            <img id="preview-image" alt="Preview" />
+        </div>
+        <div id="layout-section">
+            <div class="step-indicator">Step 3: Create Layout</div>
+            <label for="quantity">Number of photos:</label>
+            <input type="number" id="quantity" min="1" max="42" value="6" />
+            <button id="create-layout">Create Layout</button>
+            <div id="layout-container">
+                <div class="photo-grid"></div>
+            </div>
+        </div>
+        <div id="print-section">
+            <div class="step-indicator">Step 4: Print or Download</div>
+            <div class="button-group">
+                <button id="print-pdf">Print PDF</button>
+                <button id="download-pdf">Download PDF</button>
+                <button id="choose-another">Choose Another Image</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
