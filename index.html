@@ -8,7 +8,7 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+     <div class="container">
         <h1>Passport Photo Resizer</h1>
         <div id="input-section">
             <div class="step-indicator">Step 1: Upload Photo</div>
@@ -31,6 +31,8 @@
             <div class="step-indicator">Step 3: Create Layout</div>
             <label for="quantity">Number of photos:</label>
             <input type="number" id="quantity" min="1" max="42" value="6" />
+            <label for="blanks">Number of blank images:</label>
+            <input type="number" id="blanks" min="0" max="42" value="0" />
             <button id="create-layout">Create Layout</button>
             <div id="layout-container">
                 <div class="photo-grid"></div>
