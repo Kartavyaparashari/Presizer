@@ -9,13 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>Passport Photo Resizer</h1>
+        <h1>Presizer Pro</h1>
         <div id="input-section">
             <div class="step-indicator">Step 1: Upload Photo</div>
             <div id="drop-area">
                 <p>Drag and drop an image here or click to choose a file</p>
                 <input type="file" id="upload-photo" accept="image/*" />
             </div>
+            <label for="capture">Capture Image</label>
+            <input type="file"  id="capture" accept="image/*" capture="environment">
         </div>
         <div id="crop-section">
             <div class="step-indicator">Step 2: Crop Photo</div>
@@ -47,6 +49,7 @@
             </div>
         </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>    <script src="./index.js"></script>
