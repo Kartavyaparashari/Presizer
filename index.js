@@ -4,6 +4,7 @@
 
         const dropArea = document.getElementById('drop-area');
         const uploadInput = document.getElementById('upload-photo');
+        const captureInput =document.getElementById('capture');
         const cropSection = document.getElementById('crop-section');
         const cropImage = document.getElementById('crop-image');
         const cropButton = document.getElementById('crop-button');
@@ -40,6 +41,10 @@
 
         uploadInput.addEventListener('change', function(e) {
             handleFiles(this.files);
+        });
+        captureInput.addEventListener('change', function(e) {  // Capture button handling
+            handleFiles(this.files);
+            
         });
 
         function handleDrop(e) {
@@ -138,10 +143,10 @@
 
             const pageWidth = 210;
             const pageHeight = 297;
-            const marginLeft = 3; // Further decreased left margin
-            const marginTop = 5; // Further decreased top margin for first row
+            const marginLeft = 3.6; // Further decreased left margin
+            const marginTop = 2; // Further decreased top margin for first row
             const imgWidth = 30; // Slightly adjusted for better fit
-            const imgHeight = 40; // Slightly adjusted for better fit
+            const imgHeight = 39; // Slightly adjusted for better fit
             const gapHorizontal = 3.5; // Further decreased gap horizontally
             const gapVertical = 3; // Further decreased gap vertically
 
