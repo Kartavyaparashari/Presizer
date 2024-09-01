@@ -19,6 +19,29 @@
             width: 450px;
             text-align: center;
         }
+        #capture {
+    display: none; /* Hide the default file input */
+}
+
+label[for="capture"] {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+label[for="capture"]:hover {
+    background-color: #45a049;
+}
+
+label[for="capture"]:active {
+    background-color: #3e8e41;
+}
+
 
         h1 {
             font-size: 2rem;
@@ -53,8 +76,8 @@
 
         #layout-container {
             margin-top: 25px;
-            width: 210mm;
-            height: 297mm;
+            width: 110mm;
+            height: 170mm;
             border: 2px solid #ddd;
             background-color: #fff;
             display: none;
