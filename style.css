@@ -19,6 +19,7 @@
             width: 450px;
             text-align: center;
         }
+.free{color:red;}
         #capture {
     display: none; /* Hide the default file input */
 }
